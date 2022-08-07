@@ -1,0 +1,20 @@
+<div class="app-comp" style="text-align: center">
+  <h1 *ngIf="counter > 5"> {{ title }}</h1>
+  <h1> {{ counter }}</h1>
+  <img
+    width="450"
+    src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png"
+    alt="Nx - Smart, Fast and Extensible Build System"
+  />
+</div>
+
+<div>
+  <!-- <div> {{ names[0] }}</div>
+  <div> {{ names[1] }}</div>
+  <div> {{ names[2] }}</div> -->
+
+  <div *ngFor="let name of names"> {{ name }}</div>
+</div>
+
+
+<button (click)="changeCounter()">Change counter</button>
